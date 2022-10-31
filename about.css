@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+}
+
+nav {
+    background-color: rgba(216, 112, 147, 0.7);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+    color: rgba(0, 0, 0, 0.7);
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.listings {
+    list-style-type: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    color:rgba(0, 0, 0 0.8);
+}
+
+
+.links {
+   text-decoration: none; 
+   color: black;
+   font-weight: bold;
+   font-size: 12px;
+   transition: 0.4s;
+}
+
+.links:hover {
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+.nav-btn {
+    width: 30%;
+    font-size: 18px;
+}
+
+
+.btn-nav-i {
+    color: rgba(0, 0, 0, 0.7);
+    float: right;
+    padding-right: 15px;
+    transition: 0.4s;
+}
+
+.btn-nav-i:hover {
+    color: white;
+}
+
+
+
+section {
+    height: 90vh;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.overview {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    margin: 70px;
+    padding: 40px;    
+}
+
+p {
+    color:rgba(216, 112, 147, 0.7);
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding: 50px;
+   
+}
+
+.team {
+    color:rgba(206, 102, 142, 0.6);
+    margin: 1rem;
+    text-align: center;
+}
+
+.team h3 {
+    margin: 0.5rem;
+}
+
+
+.theteam {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamers{
+    height: 420px;
+    width: 850px;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.team-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 30px;
+    
+}
+
+
+.name {
+    height: 180px;
+    font-size: 10px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+span {
+    color: white;
+}
+
+.description {
+    width: 270px;    
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+    header {
+        height: 10vh;
+        width: 100%;
+        float: left;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: left;
+        padding-left: 2%;
+    }
+    
+    nav {
+        height: 10vh;
+        width: 100%;
+        display: block;
+    }
+
+
+    .listings {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    .btn-nav-i .fa-magnifying-glass {
+        position: absolute;
+        top: 6px;
+        right: 20px;
+    }
+
+    .btn-nav-i .fa-cart-shopping {
+        position: absolute;
+        top: 6px;
+        right: 80px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    }
+     
+    .about {
+        position: relative;
+    }
+    
+
+    .overview {
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px; 
+    }    
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        
+    }
+    
+    p {
+        color:rgba(216, 112, 147, 0.7);
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 30px;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+    
+    }
+
+    .theteam {
+        display: flex;
+        flex-direction: column;  
+        align-items: center; 
+    }
+
+    .team {
+       padding: 0 80px;
+      
+    }
+
+    img {
+        height:50px;
+        width: 50px;
+        margin-top: 40px;
+        border-radius: 30px
+    }
+
+    .name {
+        height: 80px;    
+    }
+
+    .teamers{
+        height: 460px;
+        width: 260px;
+        border-radius: 15px;
+        display: block;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        place-items: center;
+
+    }
+
+    .description {
+        width: 232px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:481px) and (max-width: 800px) {
+
+    .logo {
+    padding-right: 60px;
+ }
+
+ .listings {
+    padding-left: 66px;
+    width: 65%;
+ }
+
+ .links {
+    margin: 5px;
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    align-items: center;
+    position: relative;
+}
+ 
+.about {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.overview {
+    margin-left: 90px;
+    padding: 20px; 
+    text-align: center;
+}
+
+ p {
+    color:rgba(216, 112, 147, 0.7);
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    padding: 40px;
+}
+
+.team {
+    color:rgba(206, 102, 142, 0.6);
+    margin: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: 130px;
+}
+
+.team h3 {
+    margin: 0.8rem;
+}
+
+
+.theteam {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamers{
+    height: 200px;
+    width: 675px;
+    
+}
+
+
+img {
+    height: 60px;
+    width: 60px;
+    margin-top: 100px;
+    border-radius: 30px
+}
+
+
+.name {
+    height: 160px;
+    font-size: 7px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+.name-1 {
+    padding-left: 20px;
+}
+
+span {
+    color: white;
+}
+
+.description {
+    width: 250px;    
+}
+
+
+
+
+ 
+}
